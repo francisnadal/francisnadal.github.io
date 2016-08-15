@@ -1,0 +1,24 @@
+mixin nav-content()
+	ul.to-sections
+		li: a(href="#fjn").is-active Francis <i class="fa fa-caret-left" aria-hidden="true"></i>
+		li: a(href="#dev") Dev-elopement
+		li: a(href="#projects") Projects
+		li: a(href="#clients") Clients
+		li: a(href="#socials").remove Socials
+		li: a(href="#colab").assign Colaborate
+
+.mobile-nav
+	+nav-content()
+
+header
+	.header-position
+		h1.logo Francis Nadal
+
+		nav.site-nav
+			+nav-content()
+
+		a(href="mailto:francis.nadal@gmail.com").email-link +email me
+		
+		.mobile-nav-toggle: span
+		
+.header-placeholder

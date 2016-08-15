@@ -1,0 +1,24 @@
+mixin face(face, words, placeholder, name, title)
+  li.face(style="background-image: url(#{face});")
+    .bubble
+      p #{words}
+      cite.placeholder #{placeholder}
+      
+      cite.name — #{name}
+      cite.title #{title}
+
+section.clients#clients
+  .flex.flex--center
+    .col-1
+      ul.faces
+        +face("/assets/img/clients/travisdevtips.png","I just had a flashback to my childhood, we went to like a, uhh, a cactus place. On a field trip. It's weird.","Note: This quotes serve only as placeholders.","Travis Nielson","YouTuber/Designer, DevTips")
+        +face("/assets/img/clients/tonystark.jpg","I want to make Jarvis A.I again, so since there is a slot I want Francis to be in the Avengers.","Note: This quotes serve only as placeholders.","Tony Stark","Ironman & CEO, Stark Industries")
+        +face("/assets/img/clients/roncestravels.jpg","As a millenial entrepreneur, I definitely understand the importance of online advertising, websites and the internet market. We deal with a lot of people everyday and with consistency of service we always need the topmost help from Mr. Francis Jason Nadal to handle our website interface from scratch until the maintenance of it, as promised, he delivers his work with efficiency and quality service.","","Vhal Roncesballes","CEO, The Cebu Traveller")
+        +face("/assets/img/clients/jonsnow.jpg","They say I knew nothing. Maybe I can learn to code.","Note: This quotes serve only as placeholders.","Jon Snow","Current King of the North")
+        +face("/assets/img/clients/tommy.jpg","I'm just here to show a 'Thumb's up'.","Note: This quotes serve only as placeholders.","Tommy","From uifaces.com")
+        +face("/assets/img/clients/astro.jpg","One small typo in code, one giant bug in the program.","Note: This quotes serve only as placeholders.","Neil Charmstrong","Astroprogrammer")
+        li.back-btn.face
+        
+    .col-1
+      p.home-lead.outdented ...and seems to be doing great at it...
+      a(href="#colab").home-cta Give a Thumb's Up!

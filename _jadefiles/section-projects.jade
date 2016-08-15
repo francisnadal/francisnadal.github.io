@@ -1,0 +1,30 @@
+mixin projects(url,proj, title, note)
+  a(href="#{url}" style="background-image: url(#{proj});").project-thumb
+    .project-meta
+      .title #{title}
+      .date #{note}
+
+section.projects#projects
+  .flex.flex--center
+            
+    .col-50
+      .projects-wrap
+        +projects("http://thecebutraveller.com","/assets/img/projects/proj-1.png","The Cebu Traveller","Book an adventure!")
+        +projects("#","/assets/img/projects/proj-2.png","Capture to captivate","This is only a placeholder")
+        +projects("#","/assets/img/projects/proj-3.png","Classic music","This is only a placeholder")
+        +projects("#","/assets/img/projects/proj-4.png","Shout out loud","This is only a placeholder")
+        +projects("#","/assets/img/projects/proj-5.png","Goin' places","This is only a placeholder")
+        +projects("#","/assets/img/projects/proj-6.png","The Guitar Man","This is only a placeholder")
+        +projects("#","/assets/img/projects/proj-7.png","Thinker to tinker","This is only a placeholder")
+        +projects("#","/assets/img/projects/proj-8.png","The bigger picture","This is only a placeholder")
+        +projects("#","/assets/img/projects/proj-9.png","Heaven meets earth","This is only a placeholder")
+        +projects("#","/assets/img/projects/proj-10.png","Can you hear me","This is only a placeholder")
+        +projects("#","/assets/img/projects/proj-11.png","Taking moments","This is only a placeholder")
+        +projects("#","/assets/img/projects/proj-12.png","Time flies","This is only a placeholder")
+        
+      
+    .col-50.flex.flex--center
+      .col-1
+        .desc-wrap
+          p.home-lead.outdented ...he's done some work...
+          a(href="#colab").home-cta Got a Project?
